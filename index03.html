@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数据可视化 - AI Nexus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Nexus</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="index01.html">个人 AI 知识文章收集</a></li>
+                    <li><a href="index02.html">个人 AI 工具链接整理</a></li>
+                    <li><a href="index03.html">数据可视化</a></li>
+                    <li><a href="index04.html">个人简介</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="visualization-page">
+        <section class="visualization-hero">
+            <div class="container">
+                <h2>AI 技术趋势分析</h2>
+                <p>通过数据可视化洞察AI技术发展脉络</p>
+            </div>
+        </section>
+
+        <section class="visualization-content">
+            <div class="container">
+                <div class="chart-grid">
+                    <div class="chart-item">
+                        <h3>AI工具使用趋势</h3>
+                        <div id="toolTrendChart" class="chart"></div>
+                    </div>
+                    <div class="chart-item">
+                        <h3>AI领域投资分布</h3>
+                        <div id="investmentChart" class="chart"></div>
+                    </div>
+                    <div class="chart-item">
+                        <h3>AI技术专利数量</h3>
+                        <div id="patentChart" class="chart"></div>
+                    </div>
+                    <div class="chart-item">
+                        <h3>AI应用领域分布</h3>
+                        <div id="applicationChart" class="chart"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="data-insights">
+            <div class="container">
+                <h3>数据洞察</h3>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>增长趋势</h4>
+                        <p>AI技术呈现快速发展态势</p>
+                    </div>
+                    <div class="insight-card">
+                        <i class="fas fa-globe"></i>
+                        <h4>全球影响</h4>
+                        <p>跨国技术创新加速</p>
+                    </div>
+                    <div class="insight-card">
+                        <i class="fas fa-brain"></i>
+                        <h4>技术突破</h4>
+                        <p>机器学习算法不断优化</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Nexus. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/03.js"></script>
+    <script>
+        // 确保DOM加载完成后再初始化图表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 设置图表容器的高度
+            const charts = document.querySelectorAll('.chart');
+            charts.forEach(chart => {
+                chart.style.height = '400px';
+            });
+
+            // 重新初始化所有图表
+            const toolTrendChart = echarts.init(document.getElementById('toolTrendChart'));
+            const investmentChart = echarts.init(document.getElementById('investmentChart'));
+            const patentChart = echarts.init(document.getElementById('patentChart'));
+            const applicationChart = echarts.init(document.getElementById('applicationChart'));
+
+            // 在窗口大小改变时重绘图表
+            window.addEventListener('resize', function() {
+                toolTrendChart.resize();
+                investmentChart.resize();
+                patentChart.resize();
+                applicationChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+/* 复用主页的基础CSS */
+@import url('../css/style.css');
+/* 个人简介页面样式 */  
+.about-page .profile-hero {  
+    background: linear-gradient(135deg, #ced1d2 0%, #6bf0f0 100%);  
+    color: white;  
+    text-align: center;  
+    padding: 60px 0;  
+}  
+
+.profile-card {  
+    max-width: 400px;  
+    margin: 0 auto;  
+}  
+
+.profile-avatar {  
+    width: 200px;  
+    height: 200px;  
+    border-radius: 50%;  
+    object-fit: cover;  
+    border: 5px solid white;  
+    margin-bottom: 20px;  
+}  
+
+.about-sections {  
+    padding: 50px 0;  
+    background-color: #f4f4f4;  
+}  
+
+.section-grid {  
+    display: flex;  
+    justify-content: space-between;  
+}  
+
+.section-card {  
+    width: 30%;  
+    background-color: white;  
+    text-align: center;  
+    padding: 30px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+}  
+
+.section-card i {  
+    font-size: 3rem;  
+    color: #4a90e2;  
+    margin-bottom: 15px;  
+}  
+
+.section-link {  
+    display: inline-block;  
+    margin-top: 15px;  
+    padding: 8px 15px;  
+    background-color: #4a90e2;  
+    color: white;  
+    text-decoration: none;  
+    border-radius: 5px;  
+}  
+
+.skills-section {  
+    padding: 50px 0;  
+    background-color: #e0f7fa;  
+}  
+
+.skills-grid {  
+    display: flex;  
+    flex-direction: column;  
+}  
+
+.skill-item {  
+    margin-bottom: 20px;  
+}  
+
+.skill-bar {  
+    background-color: #e0e0e0;  
+    height: 20px;  
+    border-radius: 10px;  
+}  
+
+.skill-level {  
+    background-color: #4a90e2;  
+    height: 100%;  
+    border-radius: 10px;  
+}  
+
+/* 摄影页面 */  
+.photography-hero,  
+.projects-hero,  
+.publications-hero {  
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);  
+    color: white;  
+    text-align: center;  
+    padding: 60px 0;  
+}  
+
+.photo-gallery .gallery-grid,  
+.projects-list .project-grid,  
+.publications-list .publication-grid {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;  
+}  
+
+.gallery-item img,  
+.project-card img {  
+    width: 100%;  
+    height: 250px;  
+    object-fit: cover;  
+    border-radius: 10px;  
+}  
+
+.publication-card {  
+    background-color: white;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+}  
+
+.publication-meta {  
+    display: flex;  
+    justify-content: space-between;  
+    margin-bottom: 15px;  
+    color: #666;  
+}  
+
+@media screen and (max-width: 768px) {  
+    .section-grid,  
+    .photo-gallery .gallery-grid,  
+    .projects-list .project-grid,  
+    .publications-list .publication-grid {  
+        grid-template-columns: 1fr;  
+    }  
+
+    .section-card,  
+    .gallery-item,  
+    .project-card,  
+    .publication-card {  
+        width: 100%;  
+        margin-bottom: 20px;  
+    }  
+}

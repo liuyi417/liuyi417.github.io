@@ -1,0 +1,286 @@
+
+/* 复用主页的基础CSS */
+@import url('../css/style.css');
+
+.tools-hero {
+    background-color: #e0f7fa;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.tools-hero h2 {
+    font-size: 3rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.tools-hero p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.tools-grid {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.tool-categories {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool-category {
+    width: 48%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.tool-category h3 {
+    font-size: 2rem;
+    color: #4a90e2;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 10px;
+}
+
+.tool-list .tool-item {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.tool-list h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tool-link {
+    display: inline-block;
+    background-color: #4a90e2;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.tool-link:hover {
+    background-color: #ffcc00;
+    color: #003366;
+}
+
+/* 工具详情页面样式 */  
+.tool-detail-page {  
+    background-color: #f4f4f4;  
+}  
+
+.tool-header {  
+    background: linear-gradient(135deg, #667eea 20%, #764ba2 100%);  
+    color: rgb(205, 185, 185);  
+    text-align: center;  
+    padding: 60px 0;  
+}  
+
+.tool-logo img {  
+    width: 300px;  
+    height: 200px;  
+    border-radius: 100%;  
+    object-fit: cover;  
+    border: 5px solid white;  
+}  
+
+.tool-tagline {  
+    color: rgba(255,255,255,0.8);  
+    font-size: 1.2rem;  
+    margin-top: 10px;  
+}  
+
+.overview-grid {  
+    display: flex;  
+    justify-content: space-between;  
+    background-color: white;  
+    padding: 40px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+}  
+
+.overview-text, .overview-features {  
+    width: 48%;  
+}  
+
+.overview-features ul {  
+    list-style-type: none;  
+}  
+
+.overview-features ul li {  
+    margin-bottom: 10px;  
+    position: relative;  
+    padding-left: 20px;  
+}  
+
+.overview-features ul li:before {  
+    content: '✓';  
+    position: absolute;  
+    left: 0;  
+    color: #4a90e2;  
+}  
+
+.use-cases-grid {  
+    display: flex;  
+    justify-content: space-between;  
+}  
+
+.use-case {  
+    text-align: center;  
+    background-color: white;  
+    padding: 30px;  
+    border-radius: 10px;  
+    width: 30%;  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+}  
+
+.use-case i {  
+    font-size: 3rem;  
+    color: #4a90e2;  
+    margin-bottom: 15px;  
+}  
+
+.pricing-grid {  
+    display: flex;  
+    justify-content: space-between;  
+}  
+
+.pricing-tier {  
+    width: 48%;  
+    background-color: white;  
+    padding: 30px;  
+    border-radius: 10px;  
+    text-align: center;  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+}  
+
+.pricing-tier .price {  
+    font-size: 2.5rem;  
+    color: #4a90e2;  
+    margin: 20px 0;  
+}  
+
+.tool-cta {  
+    text-align: center;  
+    padding: 50px 0;  
+    background-color: #e0f7fa;  
+}  
+
+.cta-button {  
+    display: inline-block;  
+    background-color: #4a90e2;  
+    color: white;  
+    padding: 15px 30px;  
+    border-radius: 5px;  
+    text-decoration: none;  
+    font-size: 1.2rem;  
+    transition: background-color 0.3s;  
+}  
+
+.cta-button:hover {  
+    background-color: #357abd;  
+}
+/* 摄影作品页面样式 */  
+.photo-gallery {  
+    padding: 50px 0;  
+    background-color: #f4f4f4;  
+}  
+
+.gallery-grid {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px;  
+}  
+
+.gallery-item {  
+    overflow: hidden;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);  
+    transition: transform 0.3s ease;  
+}  
+
+.gallery-item:hover {  
+    transform: scale(1.05);  
+}  
+
+.gallery-item img {  
+    width: 100%;  
+    height: 300px;  
+    object-fit: cover;  
+}  
+
+/* 推送页面样式 */  
+.publications-list {  
+    padding: 50px 0;  
+    background-color: #f4f4f4;  
+}  
+
+.publication-grid {  
+    display: grid;  
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 30px;  
+}  
+
+.publication-card {  
+    background-color: white;  
+    border-radius: 10px;  
+    padding: 25px;  
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);  
+    transition: transform 0.3s ease;  
+}  
+
+.publication-card:hover {  
+    transform: translateY(-10px);  
+}  
+
+.publication-meta {  
+    display: flex;  
+    justify-content: space-between;  
+    margin-bottom: 15px;  
+    color: #666;  
+    font-size: 0.9em;  
+}  
+
+.publication-card h3 {  
+    color: #4a90e2;  
+    margin-bottom: 15px;  
+    border-bottom: 2px solid #4a90e2;  
+    padding-bottom: 10px;  
+}  
+
+.publication-link {  
+    display: inline-block;  
+    background-color: #4a90e2;  
+    color: white;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+    border-radius: 5px;  
+    margin-top: 15px;  
+    transition: background-color 0.3s;  
+}  
+
+.publication-link:hover {  
+    background-color: #357abd;  
+}  
+
+/* 响应式设计 */  
+@media screen and (max-width: 768px) {  
+    .gallery-grid,  
+    .publication-grid {  
+        grid-template-columns: 1fr;  
+    }  
+
+    .gallery-item,  
+    .publication-card {  
+        width: 100%;  
+        margin-bottom: 20px;  
+    }  
+}

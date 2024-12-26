@@ -1,0 +1,213 @@
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9; /* Softer background color */
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #879ab1, #50e3c2); /* Fresh gradient color */
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Hover color */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and image */
+    padding: 50px 20px;
+    background-color: #e0f7fa; /* Background color */
+    text-align: left; /* Align text to the left */
+}
+
+.hero-content {
+    max-width: 50%; /* Allow text to take up 60% of the width */
+    padding-right: 20px; /* Add padding to the right */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #ffcc00; /* Button color */
+    color: #003366; /* Button text color */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e6b800; /* Button hover color */
+}
+
+/* Adjusted Image Size */
+.hero-image {
+    width: 40%; /* Set image width to 40% of the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Features Section */
+.features {
+    background-color: #ffffff; /* Features section background color */
+    padding: 60px 0;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #4a90e2; /* Features section title color */
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-item {
+    flex: 1;
+    background-color: #f0f8ff; /* Feature item background color */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item i {
+    font-size: 3rem;
+    color: #4a90e2; /* Icon color */
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003366; /* Footer background color */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffcc00; /* Social link hover color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .hero {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .hero-content {
+        padding-right: 0; /* Remove right padding on small screens */
+        max-width: 100%; /* Allow full width on small screens */
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-image {
+        width: 100%; /* Ensure the image is responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 0; /* Remove left margin on small screens */
+    }
+
+    .feature-grid {
+        flex-direction: column; /* Stack feature items vertically on small screens */
+    }
+}
+
+
+
